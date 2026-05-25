@@ -55,7 +55,7 @@ export function AboutSection() {
               <img
                 src="foto.JPG"
                 alt="Minha Foto de Perfil"
-                className="w-full h-full object-cover object-top rounded-2xl"
+                className="w-full h-full object-cover rounded-2xl"
               />
             </motion.div>
 
