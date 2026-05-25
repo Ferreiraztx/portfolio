@@ -53,7 +53,7 @@ export function AboutSection() {
             >
               {/* Substituímos a div antiga por esta tag img */}
               <img
-                src="foto.JPG"
+                src="/foto.JPG"
                 alt="Minha Foto de Perfil"
                 className="w-full h-full object-cover rounded-2xl"
               />
