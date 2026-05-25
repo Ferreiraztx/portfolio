@@ -53,9 +53,9 @@ export function AboutSection() {
             >
               {/* Substituímos a div antiga por esta tag img */}
               <img
-                src="/foto.JPG"
+                src={new URL('./foto.JPG', import.meta.url).href}
                 alt="Minha Foto de Perfil"
-                className="w-full h-full object-cover rounded-2xl"
+                className="w-full h-full object-cover object-top rounded-2xl"
               />
             </motion.div>
 
