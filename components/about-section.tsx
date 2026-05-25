@@ -47,38 +47,32 @@ export function AboutSection() {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Avatar/Image */}
-            <motion.div variants={itemVariants} className="flex justify-center">
-              <div className="relative">
-                <motion.div
-                  whileHover={{ scale: 1.02 }}
-                  className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-1"
-                >
-                  <div className="w-full h-full rounded-xl bg-card flex items-center justify-center">
-                    <div className="text-8xl sm:text-9xl font-bold text-primary/20">
-                      JS
-                    </div>
-                  </div>
-                </motion.div>
-                {/* Decorative elements */}
-                <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/10 rounded-lg -z-10" />
-                <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-accent/10 rounded-lg -z-10" />
-              </div>
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-2xl overflow-hidden bg-gradient-to-br from-primary"
+            >
+              {/* Substituímos a div antiga por esta tag img */}
+              <img
+                src="public/foto minha.JPG"
+                alt="Minha Foto de Perfil"
+                className="w-full h-full object-cover rounded-2xl"
+              />
             </motion.div>
 
             {/* Content */}
             <motion.div variants={itemVariants} className="space-y-6">
               <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-                Olá! Sou um estudante apaixonado por tecnologia e desenvolvimento de software. 
-                Minha jornada na programação começou há alguns anos, quando descobri o poder 
+                Olá! Sou um estudante apaixonado por tecnologia e desenvolvimento de software.
+                Minha jornada na programação começou há alguns anos, quando descobri o poder
                 de transformar ideias em realidade através do código.
               </p>
               <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-                Atualmente, foco em desenvolvimento web full-stack, com especial interesse em 
-                criar interfaces intuitivas e experiências de usuário excepcionais. Acredito que 
+                Atualmente, foco em desenvolvimento web full-stack, com especial interesse em
+                criar interfaces intuitivas e experiências de usuário excepcionais. Acredito que
                 o melhor código é aquele que resolve problemas reais de forma elegante.
               </p>
               <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-                Quando não estou codando, gosto de explorar novas tecnologias, contribuir para 
+                Quando não estou codando, gosto de explorar novas tecnologias, contribuir para
                 projetos open-source e compartilhar conhecimento com a comunidade de desenvolvedores.
               </p>
 
