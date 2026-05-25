@@ -15,13 +15,13 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'João Silva | Engenheiro de Software',
-  description: 'Portfólio de João Silva - Estudante de Engenharia de Software apaixonado por criar experiências digitais incríveis.',
+  title: 'Matheus Ferreira | Engenheiro de Software',
+  description: 'Portfólio de Matheus Ferreira - Estudante de Engenharia de Software',
   keywords: ['desenvolvedor', 'engenharia de software', 'react', 'next.js', 'portfólio'],
-  authors: [{ name: 'João Silva' }],
+  authors: [{ name: 'Matheus Ferreira' }],
   openGraph: {
-    title: 'João Silva | Engenheiro de Software',
-    description: 'Estudante de Engenharia de Software apaixonado por criar experiências digitais incríveis.',
+    title: 'Matheus Ferreira | Engenheiro de Software',
+    description: 'Estudante de Engenharia de Software.',
     type: 'website',
   },
 }

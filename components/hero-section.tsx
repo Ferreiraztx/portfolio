@@ -85,18 +85,11 @@ export function HeroSection() {
         className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
       >
         <div className="max-w-4xl mx-auto text-center">
-          <motion.p
-            variants={itemVariants}
-            className="text-primary font-mono text-sm sm:text-base mb-4"
-          >
-            Olá, meu nome é
-          </motion.p>
-
           <motion.h1
             variants={itemVariants}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4"
           >
-            João Silva
+            Matheus Ferreira
           </motion.h1>
 
           <motion.div variants={itemVariants} className="h-8 sm:h-10 mb-6">
@@ -110,9 +103,8 @@ export function HeroSection() {
             variants={itemVariants}
             className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed"
           >
-            Transformando ideias em código. Apaixonado por criar experiências digitais 
-            que fazem a diferença, com foco em <span className="text-foreground font-medium">interfaces elegantes</span> e 
-            <span className="text-foreground font-medium"> soluções escaláveis</span>.
+            Transformando ideias em código. Projetos objetivos e funcionais 
+            que fazem a diferença.
           </motion.p>
 
           <motion.div
@@ -138,10 +130,9 @@ export function HeroSection() {
             className="flex items-center justify-center gap-4"
           >
             {[
-              { icon: Github, href: "https://github.com", label: "GitHub" },
-              { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-              { icon: Mail, href: "mailto:joao@email.com", label: "Email" },
-              { icon: FileText, href: "/cv.pdf", label: "CV" },
+              { icon: Github, href: "https://github.com/ferreiraztx", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/matheus-dos-santos-leal-ferreira-a13828357/", label: "LinkedIn" },
+              { icon: Mail, href: "mailto:mathxtzferreira@gmail.com", label: "Email" },
             ].map((social) => (
               <motion.a
                 key={social.label}
