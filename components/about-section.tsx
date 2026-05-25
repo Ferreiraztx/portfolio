@@ -62,18 +62,13 @@ export function AboutSection() {
             {/* Content */}
             <motion.div variants={itemVariants} className="space-y-6">
               <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-                Olá! Sou um estudante apaixonado por tecnologia e desenvolvimento de software.
-                Minha jornada na programação começou há alguns anos, quando descobri o poder
-                de transformar ideias em realidade através do código.
+                Olá! Sou um estudante de Engenharia de Software.
+                Minha jornada na programação começou ao entrar no ensino médio, quando entrei
+                para o ensino médio com técnico em Desenvolvimento de Sistemas.
               </p>
               <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-                Atualmente, foco em desenvolvimento web full-stack, com especial interesse em
-                criar interfaces intuitivas e experiências de usuário excepcionais. Acredito que
-                o melhor código é aquele que resolve problemas reais de forma elegante.
-              </p>
-              <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-                Quando não estou codando, gosto de explorar novas tecnologias, contribuir para
-                projetos open-source e compartilhar conhecimento com a comunidade de desenvolvedores.
+                Atualmente, foco em desenvolvimento full-stack e automações usando o N8N. 
+                Acredito que o melhor código é aquele que resolve problemas reais.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6">
@@ -81,12 +76,12 @@ export function AboutSection() {
                   {
                     icon: GraduationCap,
                     label: "Estudante",
-                    value: "6º Semestre",
+                    value: "1º Semestre",
                   },
                   {
                     icon: MapPin,
                     label: "Localização",
-                    value: "São Paulo, BR",
+                    value: "Curitiba, BR",
                   },
                   {
                     icon: Code2,
