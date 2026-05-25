@@ -49,7 +49,7 @@ export function HeroSection() {
     >
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
-      
+
       {/* Animated background shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
@@ -95,7 +95,9 @@ export function HeroSection() {
           <motion.div variants={itemVariants} className="h-8 sm:h-10 mb-6">
             <span className="text-xl sm:text-2xl md:text-3xl text-muted-foreground font-medium">
               {displayText}
-              <span className="animate-pulse text-primary">|</span>
+              <span className="text-primary" style={{
+                animation: 'blink 0.7s infinite',
+              }}>|</span>
             </span>
           </motion.div>
 
@@ -103,7 +105,7 @@ export function HeroSection() {
             variants={itemVariants}
             className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed"
           >
-            Transformando ideias em código. Projetos objetivos e funcionais 
+            Transformando ideias em código. Projetos objetivos e funcionais
             que fazem a diferença.
           </motion.p>
 
