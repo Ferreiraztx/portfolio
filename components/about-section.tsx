@@ -53,7 +53,7 @@ export function AboutSection() {
             >
               {/* Substituímos a div antiga por esta tag img */}
               <img
-                src={new URL('./foto.JPG', import.meta.url).href}
+                src={new URL('/foto.JPG', import.meta.url).href}
                 alt="Minha Foto de Perfil"
                 className="w-full h-full object-cover object-top rounded-2xl"
               />
