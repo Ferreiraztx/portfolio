@@ -48,7 +48,7 @@ export function Navbar() {
             <img
               src="/logomf.png"
               alt="Logo Matheus Ferreira"
-              className="h-8 w-auto object-contain"
+              className="h-20 w-auto object-contain"
             />
           </motion.a>
 
