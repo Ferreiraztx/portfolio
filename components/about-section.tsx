@@ -53,7 +53,7 @@ export function AboutSection() {
             >
               {/* Substituímos a div antiga por esta tag img */}
               <img
-                src={new URL('/foto.JPG', import.meta.url).href}
+                src="/foto.JPG"
                 alt="Minha Foto de Perfil"
                 className="w-full h-full object-cover object-top rounded-2xl"
               />
@@ -67,7 +67,7 @@ export function AboutSection() {
                 para o ensino médio com técnico em Desenvolvimento de Sistemas.
               </p>
               <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-                Atualmente, foco em desenvolvimento full-stack e automações usando o N8N. 
+                Atualmente, foco em desenvolvimento full-stack e automações usando o N8N.
                 Acredito que o melhor código é aquele que resolve problemas reais.
               </p>
 
