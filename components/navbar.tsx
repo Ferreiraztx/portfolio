@@ -46,7 +46,7 @@ export function Navbar() {
             whileTap={{ scale: 0.95 }}
           >
             <img
-              src="/logo.png"
+              src="/logomf.png"
               alt="Logo Matheus Ferreira"
               className="h-8 w-auto object-contain"
             />
