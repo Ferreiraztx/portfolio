@@ -62,12 +62,13 @@ export function AboutSection() {
             {/* Content */}
             <motion.div variants={itemVariants} className="space-y-6">
               <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-                Olá! Sou um estudante de Engenharia de Software.
-                Minha jornada na programação começou ao entrar no ensino médio, quando entrei
-                para o ensino médio com técnico em Desenvolvimento de Sistemas.
+                Olá! Sou um Engenheiro de Software em formação.
+                Sempre gostei da área de programação e no ensino médio cursei o 
+                profissionalizante em desenvolvimento de sistemas, onde ganhei o título de
+                Técnico em Desenvolvimento de Sistemas
               </p>
               <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-                Atualmente, foco em desenvolvimento full-stack e automações usando o N8N.
+                Atualmente, foco em desenvolvimento full-stack e automações.
                 Acredito que o melhor código é aquele que resolve problemas reais.
               </p>
 

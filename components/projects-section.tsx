@@ -33,7 +33,7 @@ const projects = [
     featured: true,
   },
   {
-    id: 3,
+    id: 4,
     title: "Bello Sushi Bar",
     description:
       "Site para bar para divulgação de rodízio",
@@ -45,7 +45,7 @@ const projects = [
     featured: true,
   },
   {
-    id: 4,
+    id: 5,
     title: "Projeto Agrinho",
     description:
       "Projeto desenvolvido para um concurso escolar utilizando apenas HTML e CSS.",
@@ -57,7 +57,7 @@ const projects = [
     featured: false,
   },
   {
-    id: 5,
+    id: 6,
     title: "Flowo Focus - Site de Tarefas",
     description:
       "Aplicação de gerenciamento de tarefas com drag-and-drop, categorias e prazos.",
@@ -66,6 +66,18 @@ const projects = [
     category: "Frontend",
     github: "https://github.com/Ferreiraztx/Flowo-Focus",
     demo: "https://flowo-focus.vercel.app",
+    featured: true,
+  },
+  {
+    id: 3,
+    title: "Apresentação de Casa",
+    description:
+      "Landing page desenvolvida como projeto pessoal para divulgação de imóvel.",
+    image: "/casa.png",
+    tags: ["HTML", "CSS", "JavaScript", "Gsap", "ScrollTrigger"],
+    category: "Frontend",
+    github: "https://github.com/Ferreiraztx/casa",
+    demo: "https://casa-ruddy.vercel.app",
     featured: true,
   }
 ]

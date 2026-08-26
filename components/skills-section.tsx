@@ -2,45 +2,61 @@
 
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiJavascript,
+  SiTailwindcss,
+  SiHtml5,
+  SiNodedotjs,
+  SiExpress,
+  SiPrisma,
+  SiPostgresql,
+  SiMysql,
+  SiPython,
+  SiGit,
+  SiDocker,
+  SiVercel,
+  SiSupabase,
+  SiN8N,
+} from "react-icons/si"
+import { VscCode } from "react-icons/vsc"
 
 const skillCategories = [
   {
     title: "Frontend",
     skills: [
-
-      { name: "Next.js", level: 85 },
-      { name: "TypeScript", level: 85 },
-      { name: "Tailwind CSS", level: 90 },
-      { name: "HTML/CSS", level: 95 },
+      { name: "React", icon: SiReact, color: "text-sky-400" },
+      { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
+      { name: "TypeScript", icon: SiTypescript, color: "text-blue-500" },
+      { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
+      { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-teal-400" },
+      { name: "HTML5/CSS3", icon: SiHtml5, color: "text-orange-500" },
     ],
   },
   {
-    title: "Backend",
+    title: "Backend & Banco de Dados",
     skills: [
-      { name: "Node.js", level: 80 },
-      { name: "Python", level: 90 },
-      { name: "Java", level: 70 },
-      { name: "MySQL", level: 70 },
+      { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
+      { name: "Express", icon: SiExpress, color: "text-gray-300" },
+      { name: "Prisma ORM", icon: SiPrisma, color: "text-teal-300" },
+      { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-400" },
+      { name: "MySQL", icon: SiMysql, color: "text-blue-500" },
+      { name: "Python", icon: SiPython, color: "text-yellow-500" },
     ],
   },
   {
-    title: "Ferramentas",
+    title: "Ferramentas & Infra",
     skills: [
-      { name: "Git", level: 85 },
-      { name: "N8N", level: 85 },
-      { name: "VS Code", level: 95 },
-      { name: "Canva", level: 90 },
+      { name: "Git & GitHub", icon: SiGit, color: "text-orange-600" },
+      { name: "Docker", icon: SiDocker, color: "text-blue-500" },
+      { name: "Vercel", icon: SiVercel, color: "text-white" },
+      { name: "Supabase", icon: SiSupabase, color: "text-emerald-400" },
+      { name: "N8N", icon: SiN8N, color: "text-rose-500" },
+      { name: "VS Code", icon: VscCode, color: "text-sky-500" },
     ],
   },
-]
-
-const techIcons = [
-  { name: "JavaScript", color: "bg-yellow-500" },
-  { name: "TypeScript", color: "bg-blue-500" },
-  { name: "Next.js", color: "bg-foreground" },
-  { name: "Node.js", color: "bg-green-500" },
-  { name: "Python", color: "bg-blue-600" },
-  { name: "Git", color: "bg-orange-500" },
 ]
 
 export function SkillsSection() {
@@ -58,11 +74,11 @@ export function SkillsSection() {
   }
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5 },
+      transition: { duration: 0.4 },
     },
   }
 
@@ -82,63 +98,39 @@ export function SkillsSection() {
             </h2>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-6" />
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Tecnologias e ferramentas que utilizo no meu dia a dia para criar 
-              soluções modernas e eficientes.
+              Tecnologias, linguagens e ferramentas que utilizo no meu dia a dia para construir soluções web completas e escaláveis.
             </p>
           </motion.div>
 
-          {/* Tech Icons Grid */}
-          <motion.div variants={itemVariants} className="flex flex-wrap justify-center gap-3 mb-16">
-            {techIcons.map((tech) => (
-              <motion.div
-                key={tech.name}
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 px-4 py-2 bg-card border border-border rounded-full"
-              >
-                <div className={`w-3 h-3 rounded-full ${tech.color}`} />
-                <span className="text-sm font-medium text-foreground">{tech.name}</span>
-              </motion.div>
-            ))}
-          </motion.div>
-
-          {/* Skills Categories */}
           <div className="grid md:grid-cols-3 gap-8">
-            {skillCategories.map((category, categoryIndex) => (
+            {skillCategories.map((category) => (
               <motion.div
                 key={category.title}
                 variants={itemVariants}
-                className="bg-card border border-border rounded-2xl p-6"
+                className="bg-card border border-border rounded-2xl p-6 flex flex-col justify-between"
               >
-                <h3 className="text-xl font-semibold text-foreground mb-6 flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                  {category.title}
-                </h3>
-                <div className="space-y-5">
-                  {category.skills.map((skill, skillIndex) => (
-                    <div key={skill.name}>
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="text-sm font-medium text-foreground">
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-6 flex items-center gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full" />
+                    {category.title}
+                  </h3>
+                  
+                  <div className="flex flex-wrap gap-2.5">
+                    {category.skills.map((skill) => {
+                      const Icon = skill.icon
+                      return (
+                        <motion.span
+                          key={skill.name}
+                          whileHover={{ scale: 1.05, y: -2 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="flex items-center gap-2 px-3.5 py-1.5 bg-secondary/50 border border-border text-foreground text-sm font-medium rounded-lg hover:border-primary/50 transition-colors"
+                        >
+                          <Icon className={`text-base ${skill.color}`} />
                           {skill.name}
-                        </span>
-                        <span className="text-xs text-muted-foreground">
-                          {skill.level}%
-                        </span>
-                      </div>
-                      <div className="h-2 bg-secondary rounded-full overflow-hidden">
-                        <motion.div
-                          initial={{ width: 0 }}
-                          animate={isInView ? { width: `${skill.level}%` } : { width: 0 }}
-                          transition={{
-                            duration: 1,
-                            delay: categoryIndex * 0.2 + skillIndex * 0.1,
-                            ease: "easeOut",
-                          }}
-                          className="h-full bg-gradient-to-r from-primary to-accent rounded-full"
-                        />
-                      </div>
-                    </div>
-                  ))}
+                        </motion.span>
+                      )
+                    })}
+                  </div>
                 </div>
               </motion.div>
             ))}

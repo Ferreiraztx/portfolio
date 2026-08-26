@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Github, Linkedin, Mail, Heart } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/Ferreiraztx", label: "GitHub" },
@@ -86,15 +86,15 @@ export function Footer() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          {/* Divider */}
-          <div className="w-full border-t border-white/10 py-6">
-            <div className="text-center text-sm text-gray-400">
-              <p className="text-sm items-center text-muted-foreground">
-                © {currentYear} Matheus Ferreira. Todos os direitos reservados.
-              </p>
-            </div>
-          </div>
+      {/* Divider ocupando toda a largura da tela */}
+      <div className="w-full border-t border-border py-6">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-sm text-muted-foreground">
+            © {currentYear} Matheus Ferreira. Todos os direitos reservados.
+          </p>
         </div>
       </div>
     </footer>

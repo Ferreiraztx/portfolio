@@ -14,6 +14,15 @@ const timeline = [
       "Ensino Médio integrado com curso técnico em Desenvolvimento de Sistemas concluído",
     icon: GraduationCap,
   },
+    {
+    type: "education",
+    title: "Curso Semi-Extensivo do Positivo",
+    organization: "Positivo",
+    period: "2025",
+    description:
+      "Fui aluno destaque no colégio e ganhei uma bolsa para o curso do positivo semi-extensivo.",
+    icon: GraduationCap,
+  },
   {
     type: "education",
     title: "Bacharelado em Engenharia de Software",
@@ -27,7 +36,7 @@ const timeline = [
     type: "experience",
     title: "Jovem Aprendiz em T.I.",
     organization: "BWT Operadora / Serra Verde Express",
-    period: "2026 - Atual",
+    period: "Jan / 2026 - Atual",
     description:
       "Colaboração no desenvolvimento de sistemas, no ajuste de sistemas, helpdesk, ajustes em estoque e documentação técnica.",
     icon: Briefcase,
@@ -41,9 +50,9 @@ const relevantCourses = [
   "Banco de Dados",
   "Engenharia de Software",
   "Desenvolvimento Web",
-  "Arquitetura de Software",
+  "Modelagem de Processos",
   "Inteligência Artificial",
-  "Redes de Computadores",
+  "Sistemas Cyberfísicos",
 ]
 
 export function ExperienceSection() {
