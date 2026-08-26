@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
-import { GraduationCap, Briefcase, Award } from "lucide-react"
+import { GraduationCap, Briefcase } from "lucide-react"
 
 const timeline = [
   {
@@ -14,7 +14,7 @@ const timeline = [
       "Ensino Médio integrado com curso técnico em Desenvolvimento de Sistemas concluído",
     icon: GraduationCap,
   },
-    {
+  {
     type: "education",
     title: "Curso Semi-Extensivo do Positivo",
     organization: "Positivo",
@@ -22,6 +22,7 @@ const timeline = [
     description:
       "Fui aluno destaque no colégio e ganhei uma bolsa para o curso do positivo semi-extensivo.",
     icon: GraduationCap,
+    img: "certificado.png",
   },
   {
     type: "education",
@@ -41,7 +42,6 @@ const timeline = [
       "Colaboração no desenvolvimento de sistemas, no ajuste de sistemas, helpdesk, ajustes em estoque e documentação técnica.",
     icon: Briefcase,
   },
-
 ]
 
 const relevantCourses = [
@@ -94,7 +94,7 @@ export function ExperienceSection() {
             </h2>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-6" />
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Minha trajetória acadêmica e profissional, incluindo 
+              Minha trajetória acadêmica e profissional, incluindo
               cursos relevantes para minha formação.
             </p>
           </motion.div>
@@ -108,28 +108,25 @@ export function ExperienceSection() {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className={`relative flex items-start gap-6 mb-12 ${
-                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                }`}
+                className={`relative flex items-start gap-6 mb-12 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                  }`}
               >
                 {/* Content */}
                 <div
-                  className={`flex-1 ml-8 md:ml-0 ${
-                    index % 2 === 0 ? "md:text-right md:pr-12" : "md:pl-12"
-                  }`}
+                  className={`flex-1 ml-8 md:ml-0 ${index % 2 === 0 ? "md:text-right md:pr-12" : "md:pl-12"
+                    }`}
                 >
                   <motion.div
                     whileHover={{ y: -2 }}
-                    className="bg-card border border-border rounded-xl p-6 inline-block text-left"
+                    className="bg-card border border-border rounded-xl p-6 inline-block text-left max-w-full"
                   >
                     <span
-                      className={`inline-block px-3 py-1 text-xs font-medium rounded-full mb-3 ${
-                        item.type === "education"
+                      className={`inline-block px-3 py-1 text-xs font-medium rounded-full mb-3 ${item.type === "education"
                           ? "bg-primary/10 text-primary"
                           : item.type === "experience"
-                          ? "bg-accent/10 text-accent"
-                          : "bg-chart-4/10 text-chart-4"
-                      }`}
+                            ? "bg-accent/10 text-accent"
+                            : "bg-chart-4/10 text-chart-4"
+                        }`}
                     >
                       {item.period}
                     </span>
@@ -142,6 +139,17 @@ export function ExperienceSection() {
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       {item.description}
                     </p>
+
+                    {/* Exibição do certificado sem cortes */}
+                    {item.img && (
+                      <div className="mt-4 overflow-hidden rounded-lg border border-border bg-black/20 p-1">
+                        <img
+                          src={`/${item.img}`}
+                          alt={`Certificado - ${item.title}`}
+                          className="w-full h-auto object-contain rounded hover:scale-[1.02] transition-transform duration-300"
+                        />
+                      </div>
+                    )}
                   </motion.div>
                 </div>
 
