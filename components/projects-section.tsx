@@ -12,24 +12,36 @@ const projects = [
     title: "Pahragon Beach Tennis",
     description:
       "Site desenvolvido para agendamentos da arena pahragon",
-      image: "/Pahragon.jpg",
-      tags: ["React.js", "Tailwind CSS", "Vite", "React Router DOM", "Node.js", "Express.js", "Cors" ],
-      category: "Full-Stack",
-      github:"https://github.com/Ferreiraztx/pahragon",
-      demo:"https://pahragon-teal.vercel.app",
-      featured:true,
+    image: "/Pahragon.jpg",
+    tags: ["React.js", "Tailwind CSS", "Vite", "React Router DOM", "Node.js", "Express.js", "Cors"],
+    category: "Full-Stack",
+    github: "https://github.com/Ferreiraztx/pahragon",
+    demo: "https://pahragon-teal.vercel.app",
+    featured: true,
 
   },
   {
     id: 2,
-    title: "Blog GI UFPR",
+    title: "Lamborghini - Scrollytelling",
     description:
-      "Blog para um projeto de extensão de uma estudante da UFPR direcionado ao curso de Gestão da Informação",
-    image: "/GIUFPR.jpg",
-    tags: ["Typescript", "Vite", "React", "Supabase"],
-    category: "Full-Stack",
-    github: "https://github.com/Ferreiraztx/giufpr",
-    demo: "https://giufpr.lovable.app",
+      "Projeto pessoal feito com inspiração na Lamborghini",
+    image: "/lamborghini.png",
+    tags: ["HTML", "CSS", "JavaScript", "GSAP", "ScrollyTelling", "ScrollTrigger"],
+    category: "Frontend",
+    github: "https://github.com/Ferreiraztx/lamborghini",
+    demo: "https://lambo-by-ferreira.vercel.app",
+    featured: true,
+  },
+  {
+    id: 3,
+    title: "Apresentação de Casa",
+    description:
+      "Landing page desenvolvida como projeto pessoal para divulgação de imóvel.",
+    image: "/casa.png",
+    tags: ["HTML", "CSS", "JavaScript", "Gsap", "ScrollTrigger"],
+    category: "Frontend",
+    github: "https://github.com/Ferreiraztx/casa",
+    demo: "https://casa-ruddy.vercel.app",
     featured: true,
   },
   {
@@ -68,18 +80,6 @@ const projects = [
     demo: "https://flowo-focus.vercel.app",
     featured: true,
   },
-  {
-    id: 3,
-    title: "Apresentação de Casa",
-    description:
-      "Landing page desenvolvida como projeto pessoal para divulgação de imóvel.",
-    image: "/casa.png",
-    tags: ["HTML", "CSS", "JavaScript", "Gsap", "ScrollTrigger"],
-    category: "Frontend",
-    github: "https://github.com/Ferreiraztx/casa",
-    demo: "https://casa-ruddy.vercel.app",
-    featured: true,
-  }
 ]
 
 const categories = ["Todos", "Frontend", "Backend", "Full-Stack"]
