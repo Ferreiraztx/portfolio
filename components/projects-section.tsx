@@ -34,14 +34,14 @@ const projects = [
   },
   {
     id: 3,
-    title: "Apresentação de Casa",
+    title: "Estética Automotiva Aura",
     description:
-      "Landing page desenvolvida como projeto pessoal para divulgação de imóvel.",
-    image: "/casa.png",
+      "Landing page desenvolvida como projeto pessoal para divulgação de Estética Automotiva com Scrollytelling.",
+    image: "/lavacar.png",
     tags: ["HTML", "CSS", "JavaScript", "Gsap", "ScrollTrigger"],
     category: "Frontend",
-    github: "https://github.com/Ferreiraztx/casa",
-    demo: "https://casa-ruddy.vercel.app",
+    github: "https://github.com/Ferreiraztx/lavacar",
+    demo: "https://lavacar-aura.vercel.app",
     featured: true,
   },
   {
