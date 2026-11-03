@@ -7,30 +7,30 @@ import { ExternalLink, Github, Folder } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const projects = [
-  {
+    {
     id: 1,
-    title: "Pahragon Beach Tennis",
+    title: "Sistema Imobiliário ADS Corretora",
     description:
-      "Site desenvolvido para agendamentos da arena pahragon",
-    image: "/Pahragon.jpg",
-    tags: ["React.js", "Tailwind CSS", "Vite", "React Router DOM", "Node.js", "Express.js", "Cors"],
-    category: "Full-Stack",
-    github: "https://github.com/Ferreiraztx/pahragon",
-    demo: "https://pahragon-teal.vercel.app",
+      "Sistema de gerenciamento imobiliário para a corretora ADS.",
+    image: "/adscorretora.png",
+    tags: ["Typescript", "Vite", "Tailwind"],
+    category: "Frontend",
+    github: "https://github.com/Ferreiraztx/Ads-Corretora",
+    demo: "https://www.adscorretora.com.br",
     featured: true,
-
   },
   {
     id: 2,
-    title: "Lamborghini - Scrollytelling",
+    title: "Beach Tennis Arena",
     description:
-      "Projeto pessoal feito com inspiração na Lamborghini",
-    image: "/lamborghini.png",
-    tags: ["HTML", "CSS", "JavaScript", "GSAP", "ScrollyTelling", "ScrollTrigger"],
-    category: "Frontend",
-    github: "https://github.com/Ferreiraztx/lamborghini",
-    demo: "https://lambo-by-ferreira.vercel.app",
+      "Site desenvolvido para agendamentos da arena de beach tennis",
+    image: "/Arena.png",
+    tags: ["React.js", "Tailwind CSS", "Vite", "React Router DOM", "Node.js", "Express.js", "Cors"],
+    category: "Full-Stack",
+    github: "https://github.com/Ferreiraztx/reserva-quadras",
+    demo: "https://reserva-quadras-one.vercel.app",
     featured: true,
+
   },
   {
     id: 3,
@@ -46,14 +46,14 @@ const projects = [
   },
   {
     id: 4,
-    title: "Bello Sushi Bar",
+    title: "Lamborghini - Scrollytelling",
     description:
-      "Site para bar para divulgação de rodízio",
-    image: "/Bello.jpg",
-    tags: ["Typescript", "Vite", "Tailwind"],
+      "Projeto pessoal feito com inspiração na Lamborghini",
+    image: "/lamborghini.png",
+    tags: ["HTML", "CSS", "JavaScript", "GSAP", "ScrollyTelling", "ScrollTrigger"],
     category: "Frontend",
-    github: "https://github.com/Ferreiraztx/bello",
-    demo: "https://bellosushibar.vercel.app",
+    github: "https://github.com/Ferreiraztx/lamborghini",
+    demo: "https://lambo-by-ferreira.vercel.app",
     featured: true,
   },
   {
